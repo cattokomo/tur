@@ -1,0 +1,13 @@
+diff --git a/sources/lib/run-time/Makefile.in b/sources/lib/run-time/Makefile.in
+index 9651c660c..4b1f884d3 100644
+--- a/sources/lib/run-time/Makefile.in
++++ b/sources/lib/run-time/Makefile.in
+@@ -104,7 +104,7 @@ endif
+ CC = @CC@
+ AR = ar -rcs
+ 
+-CFLAGS		= $(PLATFORM_CFLAGS) -Wall -O -g -I$(srcdir) @DEFS@ @CPPFLAGS@
++CFLAGS		+= $(PLATFORM_CFLAGS) -Wall -O -g -I$(srcdir) @DEFS@ @CPPFLAGS@
+ LFLAGS		= $(PLATFORM_LFLAGS)
+ 
+ HARP_CFLAGS     = -DOPEN_DYLAN_BACKEND_HARP
